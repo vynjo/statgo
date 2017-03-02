@@ -1,0 +1,15 @@
+# $Id$
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+bin_owner=
+bin_group=
+bin_perm=
+
+Name: libstatgrab
+Description: Provides a useful interface to system statistics
+Version: 0.91
+Libs: -L${libdir} -lstatgrab -framework IOKit -framework CoreFoundation
+Cflags: -I${includedir}
